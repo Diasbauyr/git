@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@100;300&display=swap');
+
+  body{
+      height:  100vh;
+      overflow: hidden;
+  }
+  .section1{
+      width: 100%;
+      height: 50vh;
+      background: #0089ED;
+      display: flex;
+      align-items: center;
+  }
+  .header-text{
+      display: block;
+      position: relative;
+      left: 140px;
+      width: 400px;
+      height: 200px;
+  }
+  .header-text img{
+      margin-top: 14px;
+  }
+.logo img{
+    display: block;
+    position: absolute;
+    top: 0px;
+    width: 80px;
+    top: 20px;
+    left: 20px;
+}
+.photo{
+    position: relative;
+    left: 40px;
+}
+.section2{
+    position: absolute;
+    width: 600px;
+    height: 761px;
+    left: 950px;
+    top: 79px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 35px rgba(0, 0, 0, 0.08);
+    border-radius: 40px;
+}
+
+.content1 p{
+    position: relative;
+    width: auto;
+    height: 32px;
+    left: 45px;
+    top: 50px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 31px;
+}
+.content2 p{
+    position: relative;
+    width: 100px;
+    height: 40px;
+    left: 460px;
+    top:  22px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 50;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 1px;
+    color: #8D8D8D;
+}
+.content2 a{    
+    text-decoration: none;
+    color: royalblue;
+}
+span{
+    color: rgb(14, 138, 221);
+}
+.content3 h1{
+    
+position: relative;
+height: 83px;
+left: 45px;
+top: 16px;
+letter-spacing: 1px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 60px;
+line-height: 82px;
+}
+
+
+
+
+
+.form{
+    display: block;
+    position: relative;
+    top: 50px;
+    left: 45px;
+}
+
+.form-control{
+    position: relative;
+    top: 5px;
+    width: 500px;
+    height: 55px;
+    background: #FFFFFF;
+    border: 1px solid #4285F4;
+    box-sizing: border-box;
+    border-radius: 9px;
+}
+
+.form-group2{
+    display: flex;
+    
+}
+
+.field.username, .field.number{
+    position: relative;
+    left: -50px;
+    margin-left: 50px;
+}
+.form-control.username, .form-control.number{
+    position: relative;
+    top: 5px;
+    width: 220px;
+    height: 55px;
+    background: #FFFFFF;
+    border: 1px solid #4285F4;
+    box-sizing: border-box;
+    border-radius: 9px;
+}
+
+.form-control.username::placeholder{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.5px;
+    position: relative;
+    left: 35px;
+    color: #949494;
+}
+
+.field{
+    position: relative;
+    margin-top: 20px;
+}
+.form-control::placeholder{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.5px;
+    position: relative;
+    left: 35px;
+    color: #949494;
+}
+
+.submit{
+    position: fixed;
+    top: 730px;
+    width: 500px;
+    height: 55px;
+    background: #0089ED;
+    box-shadow: 0px 4px 19px rgba(65, 124, 147, 0.3);
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    transition: .5s;
+}
+.submit:hover{
+    cursor: pointer;
+    background: #1698f5;
+}
+
+form .form-group.shake{
+    animation: shake 0.3s ease-in-out;
+  }
+  @keyframes shake {
+    0%, 100%{
+      margin-left: 0px;
+    }
+    20%, 80%{
+      margin-left: -12px;
+    }
+    40%, 60%{
+      margin-left: 12px;
+    }
+  }
+
+  form .form-group input:focus,
+form .form-group.valid input{
+  border-color: #5372F0;
+}
+
+form .form-group.shake input,
+form .form-group.error input{
+  border-color: #dc3545;
+}
+
+form .form-group .error-txt{
+    color: #dc3545;
+    text-align: left;
+    margin-top: 5px;
+  }
+form .form-group .error{
+    display: none;
+}
+form .form-group.valid .icon{
+    color: #5372F0;
+}
+.error-icon{
+    position: absolute;
+    top: 50px;
+    right: 120px;
+    color: #dc3545;
+}
+form .form-group.shake .error,
+form .form-group.error .error{
+  display: block;
+}
+
+@media screen and (max-width: 600px){
+    body{
+        background: #0089ED;
+        height: 100vh;
+    }
+    .section2{
+    position: absolute;
+    width: 326px;
+    height: 761px;
+    left: 26px;
+    top: 79px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 35px rgba(0, 0, 0, 0.08);
+    border-radius: 40px;
+    }
+
+    
+    .header-text img{
+        display: none;
+    }
+}
+
